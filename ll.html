@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APR Tooling - Power Presses Manufacturer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            gap: 80px;
+            max-width: 1200px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Left Box */
+        .left-box {
+            width: 350px;
+            padding: 60px 40px;
+            border: 6px solid red;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: slideInLeft 1.2s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        @keyframes slideInLeft {
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+        .red-line {
+            width: 70px;
+            height: 5px;
+            background-color: red;
+            margin: 30px auto;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .view-more {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        .view-more::after { content: " →"; }
+
+        /* Right Grid */
+        .right-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 600px;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .item-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .item-text {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Box -->
+        <div class="left-box">
+            <div class="title">
+                APR is a top<br>
+                Power Presses<br>
+                Manufacturer in<br>
+                India.
+            </div>
+            <div class="red-line"></div>
+            <div class="subtitle">
+                We specialize in Heavy Duty C-Type<br>
+                & H-Frame Power Presses and<br>
+                Sheet Metal Components.
+            </div>
+            <a href="#" class="view-more">VIEW MORE</a>
+        </div>
+
+        <!-- Right Grid -->
+        <div class="right-grid">
+            <div class="item">
+                <div class="icon">⚙️</div>
+                <div class="item-title">Quality Policy</div>
+                <div class="item-text">
+                    We work carefully with the good material given by customers to make strong and accurate products every time.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">🎯</div>
+                <div class="item-title">Our Mission</div>
+                <div class="item-text">
+                    To work together with customers on their designs and supply quality parts at fair prices quickly.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">🏭</div>
+                <div class="item-title">Infrastructure</div>
+                <div class="item-text">
+                    We have a small but good workshop in Coimbatore with the right machines to make parts as per customer needs.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">👥</div>
+                <div class="item-title">Our Team</div>
+                <div class="item-text">
+                    Our small team of 4 experienced people gives personal attention to every job with honesty and care.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
